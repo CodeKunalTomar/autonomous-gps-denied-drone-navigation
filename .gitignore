@@ -1,4 +1,4 @@
-# ROS2 build artifacts (13K+ directories - must exclude!)
+# ROS2 build artifacts (CRITICAL - excludes 13K+ directories!)
 build/
 install/
 log/
@@ -9,16 +9,29 @@ microros_ws/
 src/PX4-Autopilot/
 src/orb_slam3_ros2/
 
-# IDE and system files
+# IDE and development files
 .vscode/
 .idea/
 *.swp
 *.swo
+.DS_Store
+
+# Python
 __pycache__/
 *.pyc
-.DS_Store
-*~
+*.pyo
+*.egg-info/
 
-# Temporary files
+# Temporary and backup files
+*~
 *.tmp
 *.backup
+*.bak
+
+# System files
+Thumbs.db
+.Spotlight-V100
+.Trashes
+
+# Log files
+*.log
