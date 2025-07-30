@@ -1,0 +1,24 @@
+# ROS2 build artifacts (13K+ directories - must exclude!)
+build/
+install/
+log/
+
+# External dependencies (too large for GitHub)
+deps/
+microros_ws/
+src/PX4-Autopilot/
+src/orb_slam3_ros2/
+
+# IDE and system files
+.vscode/
+.idea/
+*.swp
+*.swo
+__pycache__/
+*.pyc
+.DS_Store
+*~
+
+# Temporary files
+*.tmp
+*.backup
